@@ -14,6 +14,24 @@
         top: 45%;
         border-radius: 50%;
         box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,0.25), 0.125em 0.125em 0.125em rgba(0, 0, 0, 0.15);
-        
+        animation: myball 3s infinite;
+    }
+
+    @keyframes myball {
+        0% {
+            left: 10px;
+            -webkit-animation-timing-function: ease-in;
+        }
+
+
+        50% {
+            left: 350px;
+            -webkit-animation-timing-function: ease-in;
+        }
+
+        100% {
+            left: 0;
+            -webkit-animation-timing-function: ease-in-out;
+        }
     }
 }
